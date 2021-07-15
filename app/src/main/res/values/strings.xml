@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Тренировка мозга</string>
+    <string name="true_button">Правда</string>
+    <string name="false_button">Ложь</string>
+    <string name="temp_textview">0</string>
+
+</resources>
