@@ -3,5 +3,15 @@
     <string name="true_button">Правда</string>
     <string name="false_button">Ложь</string>
     <string name="temp_textview">0</string>
+    <string name="start_button">Старт</string>
+    <string name="back_button">Назад</string>
+    <string name="logo_text">Тренировка мозга</string>
+    <string name="text_result">Ваш результат</string>
+    <string name="best_result">Лучший результат</string>
+
+
+
+
+
 
 </resources>

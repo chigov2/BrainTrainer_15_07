@@ -3,6 +3,7 @@ package techmarket.uno.braintrainer;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private float timeResult = 0;
     //переменная для правильных ответов
     private int true_answer = 0;
-    private int max_true_answer = 100;
+    private int max_true_answer = 5;
     private Boolean is_true_answer = false;
 
 
@@ -80,6 +81,13 @@ public class MainActivity extends AppCompatActivity {
         //tvMain.setText(String.valueOf(number_1));
         tvRes.setText(String.valueOf(number_index));
         tvMain.setText(text);
+
+        if (true_answer >= max_true_answer){
+            Intent i = new Intent(MainActivity.this,FinalActivity.class);
+            i.putExtra("result_time",timeResult);
+            startActivity(i);
+
+        }
     }
 
     public void onClickTrue(View view)
