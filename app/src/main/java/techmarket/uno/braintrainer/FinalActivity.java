@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 public class FinalActivity extends Activity {
     private TextView tvTitle, tvResult, tvBestResult, tvChamp;
     private float finalTime = 0;
-    private  float bestResult = 20;
+    private  float bestResult = 10;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
